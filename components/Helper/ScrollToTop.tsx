@@ -12,7 +12,7 @@ const ScrollToTop = () => {
     window.addEventListener("scroll", toggleVisibility)
 },[]); 
 
-    const scrollTop = () => {
+    const ScrollToTop = () => {
         window.scrollTo({
             top:0,
             behavior: "smooth",
