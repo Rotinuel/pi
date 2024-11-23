@@ -9,8 +9,8 @@ const ApartmentType = () => {
         <div className="w-[80%] mx-auto">
             <SectionHeading heading="Apartment Types" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10 md:mt-20 gap-8 items-center">
-                {apartmentTypeData.map((type)=> {
-                    return <div key={type.id}>
+                {apartmentTypeData.map((type, i)=> {
+                    return <div key={type.id} data-aos="zoom-in" data-aos-delay={`${i * 150}`} data-aos-anchor-placement="top-center">
                         <ApartmentTypeCard type={type}/>
                     </div>
                 })}

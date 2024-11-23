@@ -20,7 +20,8 @@ const Home = () => {
         once: true,
         anchorPlacement: "top-bottom"
       });
-    }
+    };
+    initAOS();
   }, [])
   return (
     <div className='overflow-hidden'>

@@ -4,7 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
-// import WhatsApp from "@/components/Helper/WhatsApp";
+import Whats from "@/components/Helper/Whats";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ResponsiveNav />
-        {/* <WhatsApp /> */}
+        <Whats />
         {children}
         <Footer />
         <ScrollToTop />
