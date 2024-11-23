@@ -7,13 +7,12 @@ import CityProperties from './CityProperties/CityProperties'
 import BuildingFeature from './BuildingFeature/BuildingFeature'
 import OurReview from './OurReview/OurReview'
 import Blog from './Blog/Blog'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Home = () => {
   useEffect(() =>{
     const initAOS = async () => {
-      await import("aos");
+      const AOS = await import("aos")
       AOS.init({
         duration: 1000,
         easing: "ease",
