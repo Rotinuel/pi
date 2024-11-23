@@ -7,7 +7,7 @@ import CityProperties from './CityProperties/CityProperties'
 import BuildingFeature from './BuildingFeature/BuildingFeature'
 import OurReview from './OurReview/OurReview'
 import Blog from './Blog/Blog'
-import AOS from 'aos'
+import * as AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Home = () => {
